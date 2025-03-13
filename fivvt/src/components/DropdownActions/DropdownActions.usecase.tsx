@@ -1,15 +1,48 @@
-export const DropDownActionsUsecase = {
+import Props from './DropdownActions.props';
+export const DropDownActionsUsecase: Props = {
   items: [
     {
       visual: 'О Фонде',
       hidden: [
         {
           title: 'Основная информация',
-          content: ['История создания', 'Документы', 'Контакты и реквизиты'],
+          content: [
+            {
+              title: 'История создания',
+              href: '#',
+            },
+
+            {
+              title: 'Документы',
+              href: '#',
+            },
+
+            {
+              title: 'Контакты и реквизиты',
+              href: '#',
+            },
+          ],
         },
         {
           title: 'Органы управления Фонда',
-          content: ['Правление', 'Председатель', 'Заместитель председателя'],
+          content: [
+            {
+              title: 'Контакты и реквизиты',
+              href: '#',
+            },
+            {
+              title: 'Правление',
+              href: '#',
+            },
+            {
+              title: 'Председатель',
+              href: '#',
+            },
+            {
+              title: 'Заместитель председателя',
+              href: '#',
+            },
+          ],
         },
       ],
     },
@@ -19,38 +52,51 @@ export const DropDownActionsUsecase = {
         {
           title: 'Государственные органы',
           content: [
-            'Сайт Президента РФ',
-            'Сайт Правительства РФ',
-            'Министерство обороны',
-            'Минобороны об СВО',
+            {
+              title: 'Сайт Президента РФ',
+              href: '#',
+            },
+            {
+              title: 'Министерство обороны',
+              href: '#',
+            },
+            {
+              title: 'Минобороны об СВО',
+              href: '#',
+            },
           ],
         },
         {
           title: 'Здравоохранение',
           content: [
-            'Городская поликлиника № 220',
-            'Госпиталь для ветеранов войн № 1',
-            'Госпиталь для ветеранов войн № 2',
-            'Госпиталь для ветеранов войн № 3',
-            'Пансионат "Никольский парк',
-            'СРЦ имени В.Г. Михайлова',
+            {
+              title: 'Городская поликлиника № 220',
+              href: '#',
+            },
+            {
+              title: 'Госпиталь для ветеранов войн № 1',
+              href: '#',
+            },
+            {
+              title: 'Госпиталь для ветеранов войн № 3',
+              href: '#',
+            },
+            {
+              title: 'Пансионат "Никольский парк',
+              href: '#',
+            },
+            {
+              title: 'СРЦ имени В.Г. Михайлова',
+              href: '#',
+            },
           ],
         },
       ],
     },
+    {
+      visual: 'Благотворительность',
+      href: '/charity',
+      hidden: [],
+    },
   ],
 };
-
-// interface hiddenItem {
-//   title: string;
-//   content: string[];
-// }
-
-// interface item {
-//   visual: string;
-//   hidden: hiddenItem;
-// }
-
-// export default interface Props extends HTMLAttributes<HTMLDivElement> {
-//   items: item[];
-// }
