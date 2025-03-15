@@ -3,6 +3,7 @@ import {About} from '../icons/About';
 import {Money} from '../icons/Money';
 import {Hospital} from '../icons/Hospital';
 import { HelpfullIcon } from '../icons/HelpFullIcon';
+import { EventsIcon } from '../icons/EventsIcon';
 export const DropDownActionsUsecase: Props = {
   items: [
     {
@@ -106,9 +107,15 @@ export const DropDownActionsUsecase: Props = {
       hidden: [],
     },
     {
-      visual: 'Госпиатли',
+      visual: 'Госпитали',
       icon: <Hospital className='h-5 w-5 me-2' />,
       href: '/hospitals',
+      hidden: [],
+    },
+    {
+      visual: 'Мероприятия',
+      icon: <EventsIcon className='h-5 w-5 me-2' />,
+      href: '/events',
       hidden: [],
     },
   ],

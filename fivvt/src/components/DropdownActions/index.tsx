@@ -8,8 +8,8 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
       {...props}>
       {items.map((item, index) => {
         return (
-          <li className='group w-fit h-full pe-6 flex items-center' key={index}>
-            <div className='hover:shadow flex items-center hover:scale-95 duration-200 transition-all h-full rounded-md'>
+          <li className='group w-fit h-full pe-2 flex items-center' key={index}>
+            <div className='hover:shadow px-2 flex items-center hover:scale-95 duration-200 transition-all h-full rounded-md'>
               {item.icon}
               {item.href ? (
                 <a href={item.href} className='h-fit cursor-pointer  '>
@@ -21,24 +21,21 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
             </div>
 
             <div
-              className={`hidden bg-gray_light w-dvw h-fit  transition-all py-4 ${
+              className={`hidden bg-gray_light_xl w-full h-fit  transition-all py-4 ${
                 !item.href && 'group-hover:block'
-              }
-                  translate-y-8  group-hover:translate-y-8 group-hover:animate-appear
-                   animate-disappear absolute  left-0 pl-28 pt-5 top-6`}>
-              <div className='flex gap-4 w-full'>
+              } translate-y-8  group-hover:translate-y-8 group-hover:animate-appear
+                   animate-disappear absolute z-100 left-0 pl-28 pt-5 top-6`}>
+              <div className='flex gap-4 w-full '>
                 {item.hidden.map((col, index_col) => {
                   return (
                     <div key={index_col} className='flex w-full flex-col gap-6'>
-                      <p className='font-bold text-sm text-white'>
-                        {col.title}
-                      </p>
+                      <p className='font-bold text-sm '>{col.title}</p>
                       {col.content.map((sub, index_row) => {
                         return (
                           <a
                             key={index_row}
                             href={sub.href}
-                            className='text-xs w-fit duration-200 transition-all text-white hover:scale-105 hover:shadow'>
+                            className='text-xs w-fit duration-200 transition-all  hover:scale-105 hover:shadow'>
                             {sub.title}
                           </a>
                         );
