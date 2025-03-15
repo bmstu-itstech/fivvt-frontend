@@ -29,6 +29,7 @@
   --animate-disappear: disappear 0.2s ease-out;
 
   --radius-xl: 0.5rem;
+  --radius-lgg: 0.75rem;
 
   --shadow_card: '0px 4px 33.9px 0px rgba(0, 0, 0, 0.07)',
 }

@@ -31,11 +31,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} min-h-dvh flex flex-col justify-start antialiased`}>
         <Header {...HeaderUsecase} />
         <DropDownActions {...DropDownActionsUsecase} />
         {children}
-        <Footer {...FooterUsecase} />
+        <Footer className='mt-auto' {...FooterUsecase} />
       </body>
     </html>
   );
