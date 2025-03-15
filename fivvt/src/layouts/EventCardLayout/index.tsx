@@ -15,8 +15,7 @@ export const EventCardLayout: FC<Props> = ({
     <button
       className={`${className} border-2 border-gray_light flex-col gap-2 bg-cover
        bg-center bg-no-repeat  min-w-48 min-h-48  relative aspect-square
-        flex p-4 items-center justify-end rounded-2xl overflow-hidden`}
-      >
+        flex p-4 items-center justify-end rounded-xl overflow-hidden`}>
       <img
         className='w-full h-full absolute z-0 top-0 left-0 object-center object-cover'
         src={photo}
