@@ -7,6 +7,8 @@ import {Copy} from '../icons/Copy';
 import Image from 'next/image';
 import {Location} from '../icons/Location';
 
+// переписать под нормальный data список , где isVertical будет атрибутом
+
 export const HospitalCard: FC<Props> = ({className, data, ...props}) => {
   return (
     <HospitalCardLayout

@@ -1,6 +1,8 @@
 import Props from './DropdownActions.props';
 import {About} from '../icons/About';
 import {Money} from '../icons/Money';
+import {Hospital} from '../icons/Hospital';
+import { HelpfullIcon } from '../icons/HelpFullIcon';
 export const DropDownActionsUsecase: Props = {
   items: [
     {
@@ -51,6 +53,7 @@ export const DropDownActionsUsecase: Props = {
     },
     {
       visual: 'Полезные ссылки',
+      icon: <HelpfullIcon className='h-5 w-5 me-2' />,
       hidden: [
         {
           title: 'Государственные органы',
@@ -104,7 +107,7 @@ export const DropDownActionsUsecase: Props = {
     },
     {
       visual: 'Госпиатли',
-      icon: <Money className='h-5 w-5 me-2' />,
+      icon: <Hospital className='h-5 w-5 me-2' />,
       href: '/hospitals',
       hidden: [],
     },

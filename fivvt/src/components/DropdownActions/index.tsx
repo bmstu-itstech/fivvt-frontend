@@ -9,7 +9,7 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
       {items.map((item, index) => {
         return (
           <li className='group w-fit h-full pe-6 flex items-center' key={index}>
-            <div className='hover:shadow flex items-center hover:scale-95 duration-200 transition-all rounded-md'>
+            <div className='hover:shadow flex items-center hover:scale-95 duration-200 transition-all h-full rounded-md'>
               {item.icon}
               {item.href ? (
                 <a href={item.href} className='h-fit cursor-pointer  '>
