@@ -102,5 +102,11 @@ export const DropDownActionsUsecase: Props = {
       href: '/charity',
       hidden: [],
     },
+    {
+      visual: 'Госпиатли',
+      icon: <Money className='h-5 w-5 me-2' />,
+      href: '/hospitals',
+      hidden: [],
+    },
   ],
 };
