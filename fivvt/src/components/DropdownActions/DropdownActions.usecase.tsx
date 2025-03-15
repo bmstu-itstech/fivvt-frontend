@@ -1,8 +1,11 @@
 import Props from './DropdownActions.props';
+import {About} from '../icons/About';
+import {Money} from '../icons/Money';
 export const DropDownActionsUsecase: Props = {
   items: [
     {
       visual: 'О Фонде',
+      icon: <About className='h-4 w-4 me-2' />,
       hidden: [
         {
           title: 'Основная информация',
@@ -95,6 +98,7 @@ export const DropDownActionsUsecase: Props = {
     },
     {
       visual: 'Благотворительность',
+      icon: <Money className='h-5 w-5 me-2' />,
       href: '/charity',
       hidden: [],
     },

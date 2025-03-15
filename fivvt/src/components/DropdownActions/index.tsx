@@ -9,15 +9,16 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
       {items.map((item, index) => {
         return (
           <li className='group w-fit h-full pe-6 flex items-center' key={index}>
-            {item.href ? (
-              <a
-                href={item.href}
-                className='h-fit cursor-pointer  hover:shadow hover:scale-95 duration-200 transition-all rounded-md'>
-                {item.visual}
-              </a>
-            ) : (
-              <p className='h-fit'>{item.visual}</p>
-            )}
+            <div className='hover:shadow flex items-center hover:scale-95 duration-200 transition-all rounded-md'>
+              {item.icon}
+              {item.href ? (
+                <a href={item.href} className='h-fit cursor-pointer  '>
+                  {item.visual}
+                </a>
+              ) : (
+                <p className='h-fit'>{item.visual}</p>
+              )}
+            </div>
 
             <div
               className={`hidden bg-gray_light w-dvw h-fit  transition-all py-4 ${
@@ -37,7 +38,7 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
                           <a
                             key={index_row}
                             href={sub.href}
-                            className='text-xs text-white'>
+                            className='text-xs w-fit duration-200 transition-all text-white hover:scale-105 hover:shadow'>
                             {sub.title}
                           </a>
                         );

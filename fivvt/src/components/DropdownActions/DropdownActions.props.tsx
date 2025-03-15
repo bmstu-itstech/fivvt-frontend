@@ -1,4 +1,4 @@
-import type {HTMLAttributes} from 'react';
+import type {HTMLAttributes, ReactElement} from 'react';
 
 interface hiddenItemBit {
   title: string;
@@ -13,6 +13,7 @@ interface hiddenItem {
 interface item {
   visual: string;
   href?: string;
+  icon?: ReactElement;
   hidden: hiddenItem[];
 }
 
