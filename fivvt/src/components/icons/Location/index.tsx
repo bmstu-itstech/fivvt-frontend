@@ -6,7 +6,7 @@ import src from '@/assets/location.svg';
 export const Location: FC<Props> = ({className, ...props}) => {
   return (
     <Image
-      className={`${className} `}
+      className={`${className}`}
       {...props}
       src={src}
       alt='location'
