@@ -40,13 +40,13 @@ export const CardInformationUsecase: Props = {
       {DataInformationUsecase.map((item, index) => {
         return (
           <div key={index} className='flex flex-col gap-2'>
-            <p className='text-xl font-medium'>{item.title}</p>
+            <p className='text-xl font-medium ps-6'>{item.title}</p>
             <Button
               icon={<Copy className='w-5 h-5' />}
               onClick={() => {
                 window.navigator.clipboard.writeText(`${item.value}`);
               }}
-              className='!px-0 cursor-pointer flex'>
+              className='!py-2 cursor-pointer flex'>
               {item.value}
             </Button>
           </div>
