@@ -7,7 +7,7 @@ import {HeaderUsecase} from '@/components/Header/Header.usecase';
 import {FooterUsecase} from '@/components/Footer/Footer.usecase';
 import {DropDownActions} from '@/components/DropdownActions';
 import {DropDownActionsUsecase} from '@/components/DropdownActions/DropdownActions.usecase';
-
+import {Providers} from './providers';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -30,13 +30,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-dvh flex flex-col justify-start antialiased`}>
-        <Header {...HeaderUsecase} />
-        <DropDownActions {...DropDownActionsUsecase} />
-        {children}
-        <Footer className='mt-auto' {...FooterUsecase} />
-      </body>
+      <Providers>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} min-h-dvh flex flex-col justify-start antialiased`}>
+          <Header {...HeaderUsecase} />
+          <DropDownActions {...DropDownActionsUsecase} />
+          {children}
+          <Footer className='mt-auto' {...FooterUsecase} />
+        </body>
+      </Providers>
     </html>
   );
 }
