@@ -1,0 +1,16 @@
+import type {FC} from 'react';
+import type Props from './MemberCardLayout.props';
+
+export const MemberCardLayout: FC<Props> = ({
+  className,
+  children,
+  ...props
+}) => {
+  return (
+    <div
+      className={`${className} w-full p-4 shadow-2xl border-gray-100 border-2 rounded-xl`}
+      {...props}>
+      {children}
+    </div>
+  );
+};
