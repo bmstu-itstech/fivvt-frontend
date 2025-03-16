@@ -1,17 +1,22 @@
 import type {HTMLAttributes} from 'react';
 
 interface IContactBit {
-  title: string;
-  value: string;
+  comment: string;
+  phone: string;
+}
+interface PhotoBit {
+  id: number;
+  image: string;
 }
 
 export interface HospitalCardBit {
-  photo: string;
-  title: string;
+  id: number;
+  photos: PhotoBit[];
+  name: string;
   address: string;
-  contacts: IContactBit[];
-  email: string;
-  mapUrl: string;
+  phones: IContactBit[];
+  url: string;
+  url_on_map: string;
 }
 
 export default interface Props extends HTMLAttributes<HTMLDivElement> {
