@@ -2,8 +2,9 @@ import Props from './DropdownActions.props';
 import {About} from '../icons/About';
 import {Money} from '../icons/Money';
 import {Hospital} from '../icons/Hospital';
-import { HelpfullIcon } from '../icons/HelpFullIcon';
-import { EventsIcon } from '../icons/EventsIcon';
+import {HelpfullIcon} from '../icons/HelpFullIcon';
+import {EventsIcon} from '../icons/EventsIcon';
+import {MembersIcon} from '../icons/MembersIcon';
 export const DropDownActionsUsecase: Props = {
   items: [
     {
@@ -24,6 +25,7 @@ export const DropDownActionsUsecase: Props = {
             },
 
             {
+              icon: <MembersIcon className='h-4 w-4' />,
               title: 'Контакты и реквизиты',
               href: '#',
             },
@@ -33,20 +35,14 @@ export const DropDownActionsUsecase: Props = {
           title: 'Органы управления Фонда',
           content: [
             {
+              icon: <MembersIcon className='h-4 w-4' />,
               title: 'Контакты и реквизиты',
               href: '#',
             },
             {
+              icon: <MembersIcon className='h-4 w-4' />,
               title: 'Правление',
-              href: '#',
-            },
-            {
-              title: 'Председатель',
-              href: '#',
-            },
-            {
-              title: 'Заместитель председателя',
-              href: '#',
+              href: '/members',
             },
           ],
         },

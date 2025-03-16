@@ -3,6 +3,7 @@ import type {HTMLAttributes, ReactElement} from 'react';
 interface hiddenItemBit {
   title: string;
   href: string;
+  icon?: ReactElement;
 }
 
 interface hiddenItem {

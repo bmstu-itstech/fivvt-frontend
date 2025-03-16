@@ -46,7 +46,7 @@ export const CardInformationUsecase: Props = {
               onClick={() => {
                 window.navigator.clipboard.writeText(`${item.value}`);
               }}
-              className='!py-2 cursor-pointer flex'>
+              className='!py-2 cursor-pointer flex !text-base'>
               {item.value}
             </Button>
           </div>
