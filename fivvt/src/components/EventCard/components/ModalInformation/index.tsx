@@ -3,19 +3,22 @@ import {ArrowRightIcon} from '@/components/icons/ArrowRightIcon';
 import Image from 'next/image';
 import {CrossIcon} from '@/components/icons/CrossIcon';
 import Props from './ModalInformation.props';
-import type {EventCardData} from '../../EventCard.props';
-import {count} from 'console';
+
 const ModalInformation: FC<Props> = ({data, onClick}) => {
   const [isImageOpen, setIsImageOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<number>(0);
-  const openImage = useCallback((idx: number) => {
-    setSelectedImage(idx);
-    setIsImageOpen(true);
-  }, []);
+
+  const openImage = useCallback(
+    (idx: number) => {
+      setSelectedImage(idx);
+      setIsImageOpen(true);
+    },
+    [isImageOpen],
+  );
   const closeImage = useCallback(() => {
     setIsImageOpen(false);
     setSelectedImage(0);
-  }, []);
+  }, [isImageOpen]);
   const nextImage = useCallback(() => {
     setSelectedImage((selectedImage + 1) % data.count);
   }, [selectedImage]);

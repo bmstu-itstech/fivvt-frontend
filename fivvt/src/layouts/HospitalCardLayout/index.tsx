@@ -8,7 +8,8 @@ export const HospitalCardLayout: FC<Props> = ({
 }) => {
   return (
     <div
-      className={`${className} p-4 shadow-2xl shadow-gray_light  w-full border-2 border-gray_light_xl rounded-2xl min-h-36 h-fit`}
+      className={`${className} p-4 shadow-2xl shadow-gray_light
+        w-full border-2 border-gray_light_xl rounded-2xl min-h-36 max-h-96 `}
       {...props}>
       {children}
     </div>

@@ -15,7 +15,9 @@ export const EventCard: FC<Props> = ({className, data, ...props}) => {
         setIsOpen(!isOpen);
       }}
       photo={data.main_photo}
-      className={`${className} `}
+      className={`${className} ${
+        !isOpen && `hover:-translate-y-1 duration-300`
+      }`}
       {...props}>
       {isOpen && (
         <ModalInformation onClick={() => setIsOpen(false)} data={data} />

@@ -13,14 +13,16 @@ export const EventCardLayout: FC<Props> = ({
 }) => {
   return (
     <button
-      className={`${className} border-2 border-gray_light flex-col gap-2 bg-cover
+      className={`${className} border-2 border-gray-300 flex-col gap-2 bg-cover
        bg-center bg-no-repeat  min-w-48 min-h-48  relative aspect-square
-        flex p-4 items-center justify-end rounded-xl overflow-hidden`}>
+        flex p-4 items-center justify-end rounded-xl overflow-hidden
+         hover:shadow-2xl cursor-pointer duration-200 transition-all`}>
       <img
         className='w-full h-full absolute z-0 top-0 left-0 object-center object-cover'
         src={photo}
         alt='photo'
         onClick={onClick}
+        // {...props}
       />
       <p className='text-white z-[5] font-medium w-full max-w-2/3 truncate'>
         {date}
