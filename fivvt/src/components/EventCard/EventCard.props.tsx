@@ -1,11 +1,7 @@
 import type {HTMLAttributes} from 'react';
+import { IAlbum } from '@/domain/entitites/albums';
 
-export interface EventCardData {
-  main_photo: string;
-  title: string;
-  date: string;
-  count: number;
-  photos: string[];
+export interface EventCardData extends IAlbum {
 }
 
 export default interface Props extends HTMLAttributes<HTMLImageElement> {

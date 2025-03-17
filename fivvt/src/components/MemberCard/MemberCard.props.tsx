@@ -1,12 +1,7 @@
+import type {IBoard} from '@/domain/entitites/board';
 import type {HTMLAttributes} from 'react';
 
-export interface MemberCardData {
-  id: number;
-  image: string;
-  full_name: string;
-  post: string;
-  biography: string;
-}
+export interface MemberCardData extends IBoard {}
 
 export default interface Props extends HTMLAttributes<HTMLDivElement> {
   data: MemberCardData;
