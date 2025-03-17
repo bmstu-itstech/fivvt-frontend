@@ -10,7 +10,7 @@ const EmblaCarousel: React.FC<PropType> = props => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   return (
-    <section className={`embla h-full max-h-full ${className}`}>
+    <section className={`embla  ${className}`}>
       <div className='embla__viewport max-h-full h-full' ref={emblaRef}>
         <div className='embla__container h-full max-h-full'>
           {slides.map((item, index) => (

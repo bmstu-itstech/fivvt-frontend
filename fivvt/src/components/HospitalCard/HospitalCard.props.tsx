@@ -3,6 +3,7 @@ import type {HTMLAttributes} from 'react';
 interface IContactBit {
   comment: string;
   phone: string;
+  // phone: string[];
 }
 interface PhotoBit {
   id: number;
