@@ -6,10 +6,10 @@ import {Divider} from '@/shared/components/Divider';
 export const MembersCard: FC<Props> = ({className, data, ...props}) => {
   return (
     <MemberCardLayout
-      className={`${className} w-full flex justify-between gap-8 items-center max-h-96 h-96`}
+      className={`${className} w-full flex justify-between  items-center max-h-95 h-95`}
       {...props}>
-      <div className='flex flex-col h-full justify-between items-center'>
-        <div className='flex flex-col max-w-4/5 gap-4 w-full items-center'>
+      <div className='w-full flex flex-col p-2 h-full justify-between items-center max-w-2/3'>
+        <div className='flex flex-col  gap-4 w-full items-center'>
           <p className='text-2xl w-full truncate text-center'>
             {data.full_name}
           </p>
@@ -25,7 +25,7 @@ export const MembersCard: FC<Props> = ({className, data, ...props}) => {
         alt='member'
         width={800}
         height={800}
-        className='object-center object-cover h-full rounded-2xl aspect-square max-w-1/3 cursor-pointer'
+        className='object-center object-cover p-2 h-full rounded-2xl aspect-square w-1/3 max-w-1/3 cursor-pointer'
       />
     </MemberCardLayout>
   );

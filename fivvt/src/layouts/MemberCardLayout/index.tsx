@@ -8,7 +8,7 @@ export const MemberCardLayout: FC<Props> = ({
 }) => {
   return (
     <div
-      className={`${className} w-full p-4 shadow-2xl border-gray-100 border-2 rounded-xl`}
+      className={`${className} w-full p-2 shadow-2xl border-gray-100 border-2 rounded-xl`}
       {...props}>
       {children}
     </div>
