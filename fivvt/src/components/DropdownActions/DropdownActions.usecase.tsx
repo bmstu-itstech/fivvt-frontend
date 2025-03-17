@@ -5,6 +5,8 @@ import {Hospital} from '../icons/Hospital';
 import {HelpfullIcon} from '../icons/HelpFullIcon';
 import {EventsIcon} from '../icons/EventsIcon';
 import {MembersIcon} from '../icons/MembersIcon';
+import {DocumentIcon} from '../icons/DocumentIcon';
+import {HistoryIcon} from '../icons/HistoryIcon';
 export const DropDownActionsUsecase: Props = {
   items: [
     {
@@ -16,17 +18,13 @@ export const DropDownActionsUsecase: Props = {
           content: [
             {
               title: 'История создания',
+              icon: <HistoryIcon className='h-4 w-4' />,
               href: '#',
             },
 
             {
               title: 'Документы',
-              href: '#',
-            },
-
-            {
-              icon: <MembersIcon className='h-4 w-4' />,
-              title: 'Контакты и реквизиты',
+              icon: <DocumentIcon className='w-5 h-5' />,
               href: '#',
             },
           ],
@@ -36,22 +34,11 @@ export const DropDownActionsUsecase: Props = {
           content: [
             {
               icon: <MembersIcon className='h-4 w-4' />,
-              title: 'Контакты и реквизиты',
-              href: '#',
-            },
-            {
-              icon: <MembersIcon className='h-4 w-4' />,
               title: 'Правление',
               href: '/members',
             },
           ],
         },
-      ],
-    },
-    {
-      visual: 'Полезные ссылки',
-      icon: <HelpfullIcon className='h-5 w-5 me-2' />,
-      hidden: [
         {
           title: 'Государственные органы',
           content: [
@@ -69,33 +56,9 @@ export const DropDownActionsUsecase: Props = {
             },
           ],
         },
-        {
-          title: 'Здравоохранение',
-          content: [
-            {
-              title: 'Городская поликлиника № 220',
-              href: '#',
-            },
-            {
-              title: 'Госпиталь для ветеранов войн № 1',
-              href: '#',
-            },
-            {
-              title: 'Госпиталь для ветеранов войн № 3',
-              href: '#',
-            },
-            {
-              title: 'Пансионат "Никольский парк',
-              href: '#',
-            },
-            {
-              title: 'СРЦ имени В.Г. Михайлова',
-              href: '#',
-            },
-          ],
-        },
       ],
     },
+
     {
       visual: 'Благотворительность',
       icon: <Money className='h-5 w-5 me-2' />,
