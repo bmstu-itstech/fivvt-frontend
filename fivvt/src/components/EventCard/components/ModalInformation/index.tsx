@@ -20,11 +20,11 @@ const ModalInformation: FC<Props> = ({data, onClick}) => {
     setSelectedImage(0);
   }, [isImageOpen]);
   const nextImage = useCallback(() => {
-    setSelectedImage((selectedImage + 1) % data.count);
+    setSelectedImage((selectedImage + 1) % data.photos.length);
   }, [selectedImage]);
   const prevImage = useCallback(() => {
     setSelectedImage(
-      selectedImage - 1 >= 0 ? selectedImage - 1 : data.count - 1,
+      selectedImage - 1 >= 0 ? selectedImage - 1 : data.photos.length - 1,
     );
   }, [selectedImage]);
 
@@ -55,13 +55,13 @@ const ModalInformation: FC<Props> = ({data, onClick}) => {
             </p>
             {data.photos.map((item, index) => (
               <Image
-                src={item}
+                src={item.image}
                 key={index}
                 width={1500}
                 height={1000}
                 alt='photo'
                 onClick={() => openImage(index)} // открываем изображение при клике
-                className='rounded-lg w-1/3 p-2 cursor-pointer' // добавляем курсор для указания, что изображение кликабельно
+                className='rounded-lg w-1/3 p-2 cursor-pointer object-center object-cover' // добавляем курсор для указания, что изображение кликабельно
               />
             ))}
           </div>
@@ -79,11 +79,11 @@ const ModalInformation: FC<Props> = ({data, onClick}) => {
             className='absolute top-1/2 left-0 rotate-180 cursor-pointer translate-x-1/2 '
           />
           <Image
-            src={data.photos[selectedImage]!}
+            src={data.photos[selectedImage].image!}
             alt='Enlarged'
-            width={1500}
-            height={1000}
-            className='max-w-4/5 max-h-4/5'
+            width={1900}
+            height={1080}
+            className='max-w-4/5 max-h-4/5 object-center object-cover'
             onClick={closeImage} // закрываем увеличение при клике
           />
         </div>

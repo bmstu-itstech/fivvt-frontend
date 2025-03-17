@@ -1,6 +1,7 @@
 interface PhotoBit {
   image: string;
   id: number;
+  uploaded_at: string;
 }
 
 export interface IAlbum {
@@ -10,4 +11,5 @@ export interface IAlbum {
   main_photo: {
     photo: PhotoBit;
   };
+  created_at: string;
 }

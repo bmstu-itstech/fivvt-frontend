@@ -1,21 +1,40 @@
 'use client';
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import {PageLayout} from '@/layouts/PageLayout';
 import {EventCard} from '@/components/EventCard';
-import {allEventCards} from '@/components/EventCard/EventCard.usecase';
+import {useGetAlbums} from '@/hooks/albums/useGetAlbums';
+import {EventCardSkeleton} from '@/components/EventCard/EventCard.skeleton';
 const Page: FC = () => {
+  const {data, isLoading} = useGetAlbums();
+  useEffect(() => {
+    console.log(data);
+  }, [isLoading]);
   return (
     <PageLayout title='Мероприятия'>
       <div className='w-full flex flex-wrap'>
-        {allEventCards.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className='px-2 py-2 w-1/4 flex justify-center items-center'>
-              <EventCard className='w-full h-full' {...item}></EventCard>
-            </div>
-          );
-        })}
+        {isLoading || !data ? (
+          <>
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+            <EventCardSkeleton />
+          </>
+        ) : (
+          data.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className='px-2 py-2 w-1/4 flex justify-center items-center'>
+                <EventCard className='w-full h-full' data={item} />
+              </div>
+            );
+          })
+        )}
       </div>
     </PageLayout>
   );

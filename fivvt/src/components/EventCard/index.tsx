@@ -9,12 +9,12 @@ export const EventCard: FC<Props> = ({className, data, ...props}) => {
   return (
     <EventCardLayout
       title={data.title}
-      date={data.date}
-      count={data.count}
+      date={data.created_at}
+      count={data.photos.length}
       onClick={() => {
         setIsOpen(!isOpen);
       }}
-      photo={data.main_photo}
+      photo={data.main_photo.photo.image}
       className={`${className} ${
         !isOpen && `hover:-translate-y-1 duration-300`
       }`}

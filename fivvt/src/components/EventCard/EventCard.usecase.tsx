@@ -88,3 +88,17 @@ const mero7: Props = {
   },
 };
 export const allEventCards = [mero1, mero2, mero3, mero4, mero5, mero6, mero7];
+
+interface PhotoBit {
+  image: string;
+  id: number;
+}
+
+export interface IAlbum {
+  id: number;
+  title: string;
+  photos: PhotoBit[];
+  main_photo: {
+    photo: PhotoBit;
+  };
+}
