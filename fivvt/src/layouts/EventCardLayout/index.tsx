@@ -1,6 +1,6 @@
 import type {FC} from 'react';
 import type Props from './EventCardLayout.props';
-
+import DateFormat from '@/utils/calc/dateFormat';
 export const EventCardLayout: FC<Props> = ({
   className,
   title,
@@ -25,7 +25,7 @@ export const EventCardLayout: FC<Props> = ({
         // {...props}
       />
       <p className='text-white z-[5] font-medium w-full max-w-2/3 truncate'>
-        {date}
+        <DateFormat>{date}</DateFormat>
       </p>
       <p className='text-white z-[5] font-medium w-full max-w-2/3 truncate'>
         {title}
