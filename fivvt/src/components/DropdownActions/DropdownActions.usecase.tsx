@@ -25,7 +25,7 @@ export const DropDownActionsUsecase: Props = {
             {
               title: 'Документы',
               icon: <DocumentIcon className='w-5 h-5' />,
-              href: '#',
+              href: '/benefits',
             },
           ],
         },
@@ -44,15 +44,19 @@ export const DropDownActionsUsecase: Props = {
           content: [
             {
               title: 'Сайт Президента РФ',
-              href: '#',
+              href: 'http://www.kremlin.ru/',
+            },
+            {
+              title: 'Сайт Правительства РФ',
+              href: 'http://government.ru/',
             },
             {
               title: 'Министерство обороны',
-              href: '#',
+              href: 'https://mil.ru/',
             },
             {
               title: 'Минобороны об СВО',
-              href: '#',
+              href: 'https://z.mil.ru/',
             },
           ],
         },
