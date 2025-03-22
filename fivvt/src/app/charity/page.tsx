@@ -9,10 +9,13 @@ import {
 
 const Page: FC = () => {
   return (
-    <PageLayout title='Платежные реквизиты'>
+    <PageLayout title='Платежные реквизиты' className='overflow-hidden'>
       <div className='w-full  gap-[min(10%,5rem)] flex flex-nowrap'>
-        <Card {...CardInformationUsecase} />
-        <Card {...CardQRUsecase} />
+        <Card
+          {...CardInformationUsecase}
+          className=' animate-appear-start-block-800'
+        />
+        <Card {...CardQRUsecase} className=' animate-appear-end-block-800' />
       </div>
     </PageLayout>
   );

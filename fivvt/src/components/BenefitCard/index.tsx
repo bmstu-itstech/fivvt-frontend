@@ -19,8 +19,11 @@ export const BenefitCard: FC<Props> = ({className, data, ...props}) => {
                 href={item.href}
                 className={`${
                   item.href ? 'cursor-pointer hover:shadow hover:scale-95' : ''
-                } flex gap-1 duration-200 transition-all truncate w-full max-w-full  px-2`}>
-                {item.title} {item.href && <RemoteArrow className='w-4 h-4' />}
+                } flex gap-1 duration-200 w-fit transition-all   max-w-full relative  px-2`}>
+                {item.title}
+                {item.href && (
+                  <RemoteArrow className='w-4 h-4 absolute left-full top-0' />
+                )}
               </a>
             );
           })}

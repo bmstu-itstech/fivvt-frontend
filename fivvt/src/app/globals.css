@@ -26,12 +26,47 @@
   --color-gray_light_xl: #f5f5f8;
 
   --animate-appear: appear 0.2s ease-out;
+  --animate-appear-opacity: opacity 0.4s ease-out;
+  --animate-appear-start-block-1500: appear-left 1.5s ease-out;
+  --animate-appear-end-block-1500: appear-right 1.5s ease-out;
+  --animate-appear-start-block-800: appear-left 0.8s ease-out;
+  --animate-appear-end-block-800: appear-right 0.8s ease-out;
   --animate-disappear: disappear 0.2s ease-out;
+  --animate-pulse-custom: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
   --radius-xl: 0.5rem;
   --radius-lgg: 0.75rem;
 
-  --shadow_card: '0px 4px 33.9px 0px rgba(0, 0, 0, 0.07)',
+  --shadow_card: '0px 4px 33.9px 0px rgba(0, 0, 0, 0.07)';
+}
+
+@keyframes appear-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appear-left {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appear-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes appear {
