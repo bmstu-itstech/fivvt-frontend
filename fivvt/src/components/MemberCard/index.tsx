@@ -3,11 +3,16 @@ import type Props from './MemberCard.props';
 import {MemberCardLayout} from '@/layouts/MemberCardLayout';
 import Image from 'next/image';
 import {Divider} from '@/shared/components/Divider';
+import {useRouter} from 'next/navigation';
 export const MembersCard: FC<Props> = ({className, data, ...props}) => {
+  const router = useRouter();
   return (
     <MemberCardLayout
       className={`${className} w-full flex justify-between  items-center max-h-95 h-95`}
-      {...props}>
+      {...props}
+      onClick={() => {
+        router.push(`members/${data.id}`);
+      }}>
       <div className='w-full flex flex-col p-2 h-full justify-between items-center max-w-2/3'>
         <div className='flex flex-col  gap-4 w-full items-center'>
           <p className='text-2xl w-full truncate text-center'>

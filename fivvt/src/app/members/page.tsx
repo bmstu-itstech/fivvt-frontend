@@ -1,7 +1,6 @@
 'use client';
 import React, {FC} from 'react';
 import {PageLayout} from '@/layouts/PageLayout';
-import {allMemberCards} from '@/components/MemberCard/MemberCard.usecase';
 import {MembersCard} from '@/components/MemberCard';
 import {useGetBoards} from '@/hooks/boards/useGetBoards';
 import {MemberCardSkeleton} from '@/components/MemberCard/MemberCard.skeleton';
