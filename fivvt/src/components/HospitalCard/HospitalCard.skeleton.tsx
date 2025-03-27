@@ -2,7 +2,7 @@ export const HospitalCardSkeleton = () => {
   return (
     <div
       role='status'
-      className='space-y-2.5 mb-12 animate-pulse flex gap-4 w-full h-56 ps-4 odd:flex-row-reverse'>
+      className='space-y-2.5 mb-12 animate-pulse flex gap-4 w-full h-56 ps-4 odd:flex-row-reverse odd:animate-appear-start-block-800 even:animate-appear-end-block-800'>
       <div className='flex items-center justify-center aspect-square h-full bg-gray-200 rounded-sm'>
         <svg
           className='w-14 h-14 text-gray-300'

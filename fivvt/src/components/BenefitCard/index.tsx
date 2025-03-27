@@ -1,3 +1,4 @@
+'use client';
 import {BenefitCardLayout} from '@/layouts/BenefitCardLayout';
 import type {FC} from 'react';
 import type Props from './BenefitCard.props';

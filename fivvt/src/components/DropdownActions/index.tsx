@@ -10,13 +10,18 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
         return (
           <li className='group w-fit h-full flex items-center' key={index}>
             <div className='hover:shadow px-2 flex items-center hover:scale-95 duration-200 transition-all h-full rounded-md'>
-              {item.icon}
               {item.href ? (
-                <a href={item.href} className='h-fit cursor-pointer  '>
+                <a
+                  href={item.href}
+                  className='h-full flex items-center cursor-pointer  '>
+                  {item.icon}
                   {item.visual}
                 </a>
               ) : (
-                <p className='h-fit'>{item.visual}</p>
+                <p className='h-fit flex items-center'>
+                  {item.icon}
+                  {item.visual}
+                </p>
               )}
             </div>
 

@@ -8,7 +8,7 @@ const Page: FC = () => {
   const {data, isLoading} = useGetHospitals();
 
   return (
-    <PageLayout title='Госпитали'>
+    <PageLayout title='Госпитали' className='overflow-x-hidden'>
       {isLoading || !data ? (
         <>
           <HospitalCardSkeleton />
