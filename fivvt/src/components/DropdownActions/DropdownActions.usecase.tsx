@@ -7,6 +7,7 @@ import {EventsIcon} from '../icons/EventsIcon';
 import {MembersIcon} from '../icons/MembersIcon';
 import {DocumentIcon} from '../icons/DocumentIcon';
 import {HistoryIcon} from '../icons/HistoryIcon';
+import {PenIcon} from '../icons/PenIcon';
 export const DropDownActionsUsecase: Props = {
   items: [
     {
@@ -27,15 +28,20 @@ export const DropDownActionsUsecase: Props = {
               icon: <DocumentIcon className='w-5 h-5' />,
               href: '/benefits',
             },
-          ],
-        },
-        {
-          title: 'Органы управления Фонда',
-          content: [
             {
               icon: <MembersIcon className='h-4 w-4' />,
               title: 'Правление',
               href: '/members',
+            },
+          ],
+        },
+        {
+          title: 'Полезные ссылки',
+          content: [
+            {
+              icon: <PenIcon className='h-4 w-4' />,
+              title: 'Творчество ветеранов',
+              href: '/creativity',
             },
           ],
         },
