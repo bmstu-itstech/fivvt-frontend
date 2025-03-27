@@ -1,3 +1,5 @@
 import type { HTMLAttributes } from 'react';
 
-export default interface Props extends HTMLAttributes<HTMLImageElement>{}
+export default interface Props extends HTMLAttributes<HTMLImageElement>{
+    isWhite?: boolean;
+}

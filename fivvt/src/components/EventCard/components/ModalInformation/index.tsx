@@ -78,12 +78,17 @@ const ModalInformation: FC<Props> = ({data, onClick}) => {
             onClick={prevImage}
             className='absolute top-1/2 left-0 rotate-180 cursor-pointer translate-x-1/2 '
           />
+          <CrossIcon
+            onClick={onClick}
+            isWhite
+            className='w-12 h-12 absolute top-1 right-5 cursor-pointer'
+          />
           <Image
             src={data.photos[selectedImage].image!}
             alt='Enlarged'
             width={1900}
             height={1080}
-            className='max-w-4/5 max-h-4/5 object-center object-cover'
+            className='max-w-4/5 max-h-4/5 object-center object-contain'
             onClick={closeImage} // закрываем увеличение при клике
           />
         </div>
