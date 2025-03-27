@@ -12,7 +12,7 @@ const Page = (id: number) => {
   const data = BoardsPlaceholder.find(item => (item.id = idd));
 
   return (
-    <div className='w-full flex flex-col px-inline-main_px py-10'>
+    <div className='w-full flex flex-col px-inline-main_px py-10 max-w-maxContainer'>
       <p className='text-2xl pb-4'>{data?.full_name}</p>
       <p className='max-w-96 w-full truncate pb-8 text-gray-600'>
         {data?.post}

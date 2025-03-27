@@ -9,7 +9,7 @@ export const PageLayout: FC<Props> = ({
 }) => {
   return (
     <div
-      className={`${className} w-full flex flex-col gap-8 items-center px-inline-main_px py-8`}
+      className={`${className} w-full flex flex-col gap-8 items-center px-inline-main_px py-8 max-w-maxContainer`}
       {...props}>
       {title && <p className='font-bold text-3xl'>{title}</p>}
       {children}

@@ -16,7 +16,7 @@ export const HospitalCard: FC<Props> = ({className, data, ...props}) => {
   const router = useRouter();
   return (
     <HospitalCardLayout
-      className={`${className} h-72 flex justify-between gap-8 items-center`}
+      className={`${className}  h-[clamp(18rem,38vh,24rem)] flex justify-between gap-8 items-center`}
       {...props}>
       <EmblaCarousel
         className='aspect-square h-full  max-h-full'

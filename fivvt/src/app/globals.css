@@ -25,6 +25,8 @@
   --color-gray_main: rgb(33, 42, 52);
   --color-gray_light_xl: #f5f5f8;
 
+  --max-width-maxContainer: 100rem;
+
   --animate-appear: appear 0.2s ease-out;
   --animate-appear-opacity: opacity 0.4s ease-out;
   --animate-appear-start-block-1500: appear-left 1.5s ease-out;
