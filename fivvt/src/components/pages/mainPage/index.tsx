@@ -16,7 +16,7 @@ export const MainPage: FC = () => {
         height={1080}
         className='-z-10 absolute top-0 left-0  object-center object-cover brightness-20 h-full w-full'
       />
-      <div className='flex w-full justify-between overflow-hidden'>
+      <div className='flex w-full justify-between overflow-hidden max-w-maxContainer mx-auto'>
         <div
           data-twe-animation-on-scroll='repeat'
           className='flex flex-col justify-center gap-8 items-center z-10  text-white w-full max-w-1/2  animate-appear-start-block-1500'>
