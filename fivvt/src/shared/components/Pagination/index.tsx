@@ -16,7 +16,6 @@ export const Pagination: FC<Props> = ({
   const NextPage = useCallback(() => {
     setPage(prev => (prev * itemsPerSlide <= countOfItems ? prev + 1 : prev));
     clickNext();
-    console.log(page);
   }, [page]);
   const PrevPage = useCallback(() => {
     setPage(prev => (prev - 1 > 0 ? prev - 1 : 1));
