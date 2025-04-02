@@ -4,6 +4,7 @@ import {MemberCardLayout} from '@/layouts/MemberCardLayout';
 import Image from 'next/image';
 import {Divider} from '@/shared/components/Divider';
 import {useRouter} from 'next/navigation';
+
 export const MembersCard: FC<Props> = ({className, data, ...props}) => {
   const router = useRouter();
   return (

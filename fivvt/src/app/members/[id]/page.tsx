@@ -2,14 +2,12 @@
 import React, {FC, useEffect} from 'react';
 import {useGetBoardById} from '@/hooks/boards/useGetBoardById';
 import Image from 'next/image';
-import {BoardsPlaceholder} from '@/utils/placeholder/boards';
 import {usePathname} from 'next/navigation';
 import no_photo from '@/assets/members.svg';
-const Page = (id: number) => {
-  // const {data, isLoading} = useGetBoardById(1);
+const Page = () => {
   const path = usePathname();
   const idd = Number(path.slice(path.lastIndexOf('/') + 1));
-  const data = BoardsPlaceholder.find(item => (item.id = idd));
+  const {data, isLoading} = useGetBoardById(idd);
 
   return (
     <div className='w-full flex flex-col px-inline-main_px py-10 max-w-maxContainer'>
