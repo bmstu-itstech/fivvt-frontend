@@ -18,12 +18,6 @@ export const DropDownActionsUsecase: Props = {
           title: 'Основная информация',
           content: [
             {
-              title: 'История создания',
-              icon: <HistoryIcon className='h-4 w-4' />,
-              href: '/history',
-            },
-
-            {
               title: 'Документы',
               icon: <DocumentIcon className='w-5 h-5' />,
               href: '/benefits',
