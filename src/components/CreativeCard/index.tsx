@@ -15,10 +15,10 @@ export const CreativeCard: FC<Props> = ({data, className}) => {
             alt='author photo'
             height={600}
             width={600}
-            className='w-1/2 aspect-square rounded-2xl object-center object-cover pb-4 pe-4 border-b-2 border-e-2 border-amber-500'
+            className=' animate-appear-start-block-800 w-1/2 aspect-square rounded-2xl object-center object-cover pb-4 pe-4 border-b-2 border-e-2 border-amber-500'
           />
           <Divider isVertical className='bg-gray-200' />
-          <div className='flex flex-col gap-4 justify-center items-center w-full max-w-1/2'>
+          <div className='flex flex-col gap-4 justify-center items-center w-full max-w-1/2 animate-appear-end-block-800'>
             <p className='text-2xl'>{data.author.name}</p>
             <p className='text-gray-500 text-xl'>{data.author.post}</p>
           </div>
@@ -26,7 +26,7 @@ export const CreativeCard: FC<Props> = ({data, className}) => {
         <div className='w-full flex flex-wrap'>
           {data.materials.map((item, index) => {
             return (
-              <div className='p-4 h-80 w-full max-w-1/4' key={index}>
+              <div className='p-4 h-80 w-full max-w-1/4 animate-appear-opacity' key={index}>
                 <CreativeBookCard className='' data={item} />
               </div>
             );

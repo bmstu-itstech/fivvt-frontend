@@ -28,7 +28,7 @@
   --max-width-maxContainer: 100rem;
 
   --animate-appear: appear 0.2s ease-out;
-  --animate-appear-opacity: opacity 0.4s ease-out;
+  --animate-appear-opacity: appear-opacity 1s ease-out;
   --animate-appear-start-block-1500: appear-left 1.5s ease-out;
   --animate-appear-end-block-1500: appear-right 1.5s ease-out;
   --animate-appear-start-block-800: appear-left 0.8s ease-out;

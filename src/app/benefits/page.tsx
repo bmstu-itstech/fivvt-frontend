@@ -1,11 +1,16 @@
 'use client';
-import React, {FC} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {PageLayout} from '@/layouts/PageLayout';
 import {BenefitsCardUsecase} from '@/components/BenefitCard/BenefitCard.usecase';
 import {BenefitCard} from '@/components/BenefitCard';
+import {HorizontalSelect} from '@/components/HorizontalSelect';
+import { HorizontalSelectDefaultUsecase } from '@/components/HorizontalSelect/HorizontalSelected.usecase';
 const Page: FC = () => {
+  const [lgota, setLgota] = useState<string>(HorizontalSelectDefaultUsecase[0]);
+  useEffect(() => {console.log(lgota)}, [lgota]); 
   return (
     <PageLayout title='Законодательство' className='overflow-hidden'>
+      <HorizontalSelect active={lgota} setSelected={setLgota} variants={HorizontalSelectDefaultUsecase} />
       <div className='w-full flex flex-col gap-12 items-center'>
         {BenefitsCardUsecase.map((item, index) => {
           return (
