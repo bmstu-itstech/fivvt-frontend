@@ -9,7 +9,7 @@ export const MembersCard: FC<Props> = ({className, data, ...props}) => {
   const router = useRouter();
   return (
     <MemberCardLayout
-      className={`${className} w-full flex justify-between  items-center max-h-95 h-95`}
+      className={`${className} w-full flex justify-between items-center max-h-95 h-95`}
       {...props}
       onClick={() => {
         router.push(`members/${data.id}`);

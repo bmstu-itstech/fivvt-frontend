@@ -1,9 +1,6 @@
 .vintage-card {
-  position: relative;
-  background: rgba(245, 238, 220, 0.7);
   border: 1px solid #d4c8a8;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), inset 0 0 30px rgba(180, 150, 100, 0.2);
-  overflow: hidden;
 }
 
 /* Основная текстура бумаги с шумом */
@@ -19,6 +16,9 @@
     linear-gradient(15deg, transparent 75%, rgba(190, 160, 120, 0.1) 75.5%, transparent 76%);
   mix-blend-mode: multiply;
   pointer-events: none;
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><path d="M0,0 L500,0 L500,500 L0,500 Z M10,10 Q50,30 30,60 Q10,90 60,110 Q110,130 40,170 Q-30,210 70,240 Q170,270 30,310 Q-110,350 90,390 Q290,430 20,480 Q-250,530 150,490 Q550,450 0,500" fill="white" stroke="none"/></svg>');
+  mask-size: cover;
+  mask-repeat: no-repeat;
 }
 
 /* Пятна и потертости (уникальные формы) */
@@ -43,11 +43,4 @@
   background-size: cover, cover, cover, 200px 200px, 150px 150px;
   background-repeat: no-repeat;
   pointer-events: none;
-}
-
-/* Рваные края */
-.vintage-card {
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><path d="M0,0 L500,0 L500,500 L0,500 Z M10,10 Q50,30 30,60 Q10,90 60,110 Q110,130 40,170 Q-30,210 70,240 Q170,270 30,310 Q-110,350 90,390 Q290,430 20,480 Q-250,530 150,490 Q550,450 0,500" fill="white" stroke="none"/></svg>');
-  mask-size: cover;
-  mask-repeat: no-repeat;
 }
