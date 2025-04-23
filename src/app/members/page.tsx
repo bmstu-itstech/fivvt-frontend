@@ -7,7 +7,7 @@ import {MemberCardSkeleton} from '@/components/MemberCard/MemberCard.skeleton';
 const Page: FC = () => {
   const {data, isLoading} = useGetBoards();
   return (
-    <PageLayout title='Правление'>
+    <PageLayout title='Правление' className='bg-[#e8e0d050]'>
       <div className='w-full gap-12 flex flex-col '>
         {isLoading || !data ? (
           <>
@@ -17,13 +17,7 @@ const Page: FC = () => {
           </>
         ) : (
           data.map((item, index) => {
-            return (
-              <MembersCard
-                key={index}
-                data={item}
-                className='odd:flex-row-reverse'
-              />
-            );
+            return <MembersCard key={index} data={item} className='odd:flex-row-reverse' />;
           })
         )}
       </div>

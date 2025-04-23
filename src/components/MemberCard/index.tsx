@@ -16,9 +16,7 @@ export const MembersCard: FC<Props> = ({className, data, ...props}) => {
       }}>
       <div className='w-full flex flex-col p-2 h-full justify-between items-center max-w-2/3'>
         <div className='flex flex-col  gap-4 w-full items-center'>
-          <p className='text-2xl w-full truncate text-center'>
-            {data.full_name}
-          </p>
+          <p className='text-2xl w-full truncate text-center'>{data.full_name}</p>
           <Divider className=' bg-black' />
           <p className='text-xl w-full truncate text-center'>{data.post}</p>
         </div>
