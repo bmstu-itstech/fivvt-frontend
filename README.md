@@ -1,5 +1,27 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Installing Dependencies
+
+Before running the project, ensure that all necessary dependencies are installed. Use one of the following commands based on your package manager:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+## Creating the .env File:
+
+Create a .env file in the root directory. This file should contain any necessary environment variables your application needs to run:
+
+```bash
+NEXT_PUBLIC_API_URL = ...
+```
+
 ## Getting Started
 
 First, run the development server:
@@ -12,6 +34,34 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+## Building the Project:
+
+When you are ready to build your project for production, you can use the following command:
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
+
+## Running Tests:
+
+If your project includes tests, you can run them using:
+
+```bash
+npm test
+# or
+yarn test
+# or
+pnpm test
+# or
+bun test
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
