@@ -119,3 +119,25 @@ body {
   color: var(--foreground);
   font-family: Stolzl, sans-serif;
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 4rem;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    opacity: 0;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 1rem;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+}
