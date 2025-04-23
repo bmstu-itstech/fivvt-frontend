@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './HistoryIcon.props';
+import { Props } from './HistoryIcon.props';
 import Image from 'next/image';
 import src from '@/assets/history.svg';
 

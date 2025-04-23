@@ -1,5 +1,5 @@
 'use client';
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import {PageLayout} from '@/layouts/PageLayout';
 import {HospitalCard} from '@/components/HospitalCard';
 import {HospitalCardSkeleton} from '@/components/HospitalCard/HospitalCard.skeleton';

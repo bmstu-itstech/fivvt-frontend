@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './Location.props';
+import { Props } from './Location.props';
 import Image from 'next/image';
 import src from '@/assets/location.svg';
 

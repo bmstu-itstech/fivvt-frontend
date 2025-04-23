@@ -8,7 +8,7 @@ const Page: FC = () => {
   const {data, isLoading} = useGetAlbums();
   useEffect(() => {
     console.log(data);
-  }, [isLoading]);
+  }, [data, isLoading]);
   return (
     <PageLayout title='Мероприятия'>
       <div className='w-full flex flex-col gap-2'>
@@ -29,9 +29,7 @@ const Page: FC = () => {
           ) : (
             data.map((item, index) => {
               return (
-                <div
-                  key={index}
-                  className='px-2 py-2 w-1/4 flex justify-center items-center'>
+                <div key={index} className='px-2 py-2 w-1/4 flex justify-center items-center'>
                   <EventCard className='w-full h-full' data={item} />
                 </div>
               );
@@ -57,9 +55,7 @@ const Page: FC = () => {
           ) : (
             data.map((item, index) => {
               return (
-                <div
-                  key={index}
-                  className='px-2 py-2 w-1/4 flex justify-center items-center'>
+                <div key={index} className='px-2 py-2 w-1/4 flex justify-center items-center'>
                   <EventCard className='w-full h-full' data={item} />
                 </div>
               );

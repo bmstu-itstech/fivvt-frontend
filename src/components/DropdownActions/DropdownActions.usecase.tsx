@@ -2,11 +2,9 @@ import Props from './DropdownActions.props';
 import {About} from '../icons/About';
 import {Money} from '../icons/Money';
 import {Hospital} from '../icons/Hospital';
-import {HelpfullIcon} from '../icons/HelpFullIcon';
 import {EventsIcon} from '../icons/EventsIcon';
 import {MembersIcon} from '../icons/MembersIcon';
 import {DocumentIcon} from '../icons/DocumentIcon';
-import {HistoryIcon} from '../icons/HistoryIcon';
 import {PenIcon} from '../icons/PenIcon';
 export const DropDownActionsUsecase: Props = {
   items: [

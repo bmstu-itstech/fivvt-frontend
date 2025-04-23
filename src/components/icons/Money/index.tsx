@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './Money.props';
+import { Props } from './Money.props';
 import Image from 'next/image';
 import src from '@/assets/money.svg';
 

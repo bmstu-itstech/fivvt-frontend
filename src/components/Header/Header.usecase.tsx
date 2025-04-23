@@ -1,7 +1,6 @@
 import {Button} from '@/shared/components/Button';
 import {Logo} from '../icons/Logo';
 import {Location} from '../icons/Location';
-import {Login} from '../icons/Login';
 
 export const HeaderUsecase = {
   head: <Logo className='w-20 h-8' />,

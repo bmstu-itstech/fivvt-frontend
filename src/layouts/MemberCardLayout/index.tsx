@@ -1,5 +1,6 @@
 import type {FC} from 'react';
-import type Props from './MemberCardLayout.props';
+// import type Props from './MemberCardLayout.props';
+import { Props } from './MemberCardLayout.props';
 
 export const MemberCardLayout: FC<Props> = ({
   className,

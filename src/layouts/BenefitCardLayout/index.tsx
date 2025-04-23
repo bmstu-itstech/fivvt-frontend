@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './BenefitCardLayout.props';
+import { Props } from './BenefitCardLayout.props';
 
 export const BenefitCardLayout: FC<Props> = ({
   className,

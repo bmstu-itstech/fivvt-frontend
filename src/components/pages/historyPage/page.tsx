@@ -2,7 +2,6 @@
 import React, {FC} from 'react';
 import {historyUsecase} from './history.usecase';
 import {HistoryCard} from './сomponents/HistoryCard';
-import Image from 'next/image';
 import {PageLayout} from '@/layouts/PageLayout';
 const HistoryPage: FC = () => {
   return (

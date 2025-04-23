@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './ArrowRightIcon.props';
+import { Props } from './ArrowRightIcon.props';
 import Image from 'next/image';
 import src from '@/assets/arrow_right.svg';
 

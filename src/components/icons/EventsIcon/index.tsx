@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './EventsIcon.props';
+import { Props } from './EventsIcon.props';
 import Image from 'next/image';
 import src from '@/assets/events.svg';
 

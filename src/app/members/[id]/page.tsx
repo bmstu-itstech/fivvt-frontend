@@ -1,5 +1,5 @@
 'use client';
-import React, {FC, useEffect} from 'react';
+import React  from 'react';
 import {useGetBoardById} from '@/hooks/boards/useGetBoardById';
 import Image from 'next/image';
 import {usePathname} from 'next/navigation';
@@ -7,7 +7,7 @@ import no_photo from '@/assets/members.svg';
 const Page = () => {
   const path = usePathname();
   const idd = Number(path.slice(path.lastIndexOf('/') + 1));
-  const {data, isLoading} = useGetBoardById(idd);
+  const {data} = useGetBoardById(idd);
 
   return (
     <div className='w-full flex flex-col px-inline-main_px py-10 max-w-maxContainer'>

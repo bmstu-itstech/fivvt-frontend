@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './MembersIcon.props';
+import { Props } from './MembersIcon.props';
 import Image from 'next/image';
 import src from '@/assets/members.svg';
 

@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import type Props from './DocumentIcon.props';
+import { Props } from './DocumentIcon.props';
 import Image from 'next/image';
 import src from '@/assets/documents.svg';
 

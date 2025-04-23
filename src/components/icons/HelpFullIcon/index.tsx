@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import Props from './HelpfullIcon.props';
+import { Props } from './HelpfullIcon.props';
 import Image from 'next/image';
 import src from '@/assets/helpful_icon.svg';
 

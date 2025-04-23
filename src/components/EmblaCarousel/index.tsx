@@ -7,7 +7,7 @@ import './embla.css';
 
 const EmblaCarousel: React.FC<PropType> = props => {
   const {slides, options, className, imageClassname} = props;
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
 
   return (
     <section className={`embla  ${className}`}>

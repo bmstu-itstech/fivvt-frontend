@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import Props from './PenIcon.props';
+import {Props} from './PenIcon.props';
 import Image from 'next/image';
 import src from '@/assets/pen.svg';
 

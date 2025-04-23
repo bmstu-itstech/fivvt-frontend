@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import Props from './QR.props';
+import { Props } from './QR.props';
 import Image from 'next/image';
 import src from '@/assets/qr_payment.png';
 

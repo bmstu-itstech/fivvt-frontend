@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import Props from './RemoteArrow.props';
+import { Props } from './RemoteArrow.props';
 import Image from 'next/image';
 import src from '@/assets/remote_arrow_icon.svg';
 

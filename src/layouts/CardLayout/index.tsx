@@ -1,5 +1,5 @@
 import {type FC} from 'react';
-import type Props from './CardLayout.props';
+import { Props } from './CardLayout.props';
 
 export const CardLayout: FC<Props> = ({children, className, ...props}) => {
   return (

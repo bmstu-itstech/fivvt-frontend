@@ -1,6 +1,6 @@
 'use client';
 import type {FC} from 'react';
-import type Props from './Logo.props';
+import { Props } from './Logo.props';
 import Image from 'next/image';
 import src from '@/assets/logo.svg';
 
