@@ -1,7 +1,7 @@
 import type {HTMLAttributes} from 'react';
 
 export default interface Props extends HTMLAttributes<HTMLDivElement> {
-    data: BenefitCardBit;
+  data: BenefitCardBit;
 }
 
 export interface BenefitCardRowBit {
@@ -9,6 +9,7 @@ export interface BenefitCardRowBit {
   href?: string;
 }
 export interface BenefitCardBit {
-  title: string;
+  lgota: string;
+  type_of_lgota: string;
   value: BenefitCardRowBit[];
 }

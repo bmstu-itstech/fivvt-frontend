@@ -13,7 +13,6 @@ export const HorizontalSelect: FC<Props> = ({
       className={`${className} flex gap-4 items-center h-16  justify-start overflow-x-auto
        w-full 
        [&::-webkit-scrollbar]:h-1
-       focus:[&::-webkit-scrollbar]:h-3
        [&::-webkit-scrollbar-track]:rounded-full
        [&::-webkit-scrollbar-thumb]:rounded-full
     dark:[&::-webkit-scrollbar-thumb]:bg-gray-200`}

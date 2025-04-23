@@ -2,17 +2,16 @@
 import {BenefitCardLayout} from '@/layouts/BenefitCardLayout';
 import type {FC} from 'react';
 import type Props from './BenefitCard.props';
-import {Divider} from '@/shared/components/Divider';
 import {RemoteArrow} from '../icons/RemoteArrow';
 export const BenefitCard: FC<Props> = ({className, data, ...props}) => {
   return (
-    <BenefitCardLayout className={`${className} h-56 `} {...props}>
-      <div className='w-full flex justify-between items-center h-full'>
-        <p className='h-full flex items-start justify-center text-xl'>
-          {data.title}
+    <BenefitCardLayout className={`${className} `} {...props}>
+      <div className='w-full flex-col gap-6 flex items-start justify-start h-full'>
+        <p className='h-10 px-2.5 flex items-center justify-center rounded-2xl text-sm text-white bg-amber-400 '>
+          {data.lgota}
         </p>
-        <Divider isVertical className='bg-gray-200 ms-auto me-8' />
-        <div className='h-full flex flex-col gap-4 w-1/2'>
+        <p className='text-lg text-gray-700 font-medium'>{data.type_of_lgota}</p>
+        <div className='flex flex-col gap-4 w-full flex-wrap max-h-32'>
           {data.value.map((item, index) => {
             return (
               <a
@@ -20,11 +19,9 @@ export const BenefitCard: FC<Props> = ({className, data, ...props}) => {
                 href={item.href}
                 className={`${
                   item.href ? 'cursor-pointer hover:shadow hover:scale-95' : ''
-                } flex gap-1 duration-200 w-fit transition-all   max-w-full relative  px-2`}>
-                {item.title}
-                {item.href && (
-                  <RemoteArrow className='w-4 h-4 absolute left-full top-0' />
-                )}
+                } flex gap-1 duration-200 w-fit transition-all text-gray-700  max-w-1/2 text-wrap relative  px-2`}>
+                ✔️ {item.title}
+                {item.href && <RemoteArrow className='w-4 h-4 absolute left-full top-0' />}
               </a>
             );
           })}
