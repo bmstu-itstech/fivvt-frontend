@@ -16,17 +16,17 @@ export const Pagination: FC<Props> = ({
   const NextPage = useCallback(() => {
     setPage(prev => (prev * itemsPerSlide <= countOfItems ? prev + 1 : prev));
     clickNext();
-  }, [page, clickNext, countOfItems, itemsPerSlide]);
+  }, [clickNext, countOfItems, itemsPerSlide]);
   const PrevPage = useCallback(() => {
     setPage(prev => (prev - 1 > 0 ? prev - 1 : 1));
     clickPrev();
-  }, [page, clickNext, countOfItems, itemsPerSlide]);
+  }, [clickPrev, countOfItems, itemsPerSlide]);
   if (countOfItems <= itemsPerSlide) return;
   return (
     <div
       className={`${className} w-full border-t-2 border-gray-200 h-12 flex  justify-between items-center`}
       {...props}>
-      <PaginationItem isCorner onClick={PrevPage}>{`< Previos`}</PaginationItem>
+      <PaginationItem isCorner onClick={PrevPage}>{`< Предыдущая`}</PaginationItem>
       <div className='flex h-full w-fit gap-4'>
         <PaginationItem
           isChosen={page == 1}
@@ -67,7 +67,7 @@ export const Pagination: FC<Props> = ({
         )}
       </div>
 
-      <PaginationItem isCorner onClick={NextPage}>{`Next >`}</PaginationItem>
+      <PaginationItem isCorner onClick={NextPage}>{`Следующая >`}</PaginationItem>
     </div>
   );
 };

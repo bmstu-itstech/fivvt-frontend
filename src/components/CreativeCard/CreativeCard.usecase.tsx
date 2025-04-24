@@ -10,8 +10,6 @@ import person1 from '@/assets/Creative_Mock/people/1.jpg';
 import person2 from '@/assets/Creative_Mock/people/2.jpg';
 import person3 from '@/assets/Creative_Mock/people/3.jpg';
 import person4 from '@/assets/Creative_Mock/people/4.jpg';
-import person5 from '@/assets/Creative_Mock/people/5.jpg';
-import person6 from '@/assets/Creative_Mock/people/6.jpg';
 export const CreativeCardUsecases: CreativeCard[] = [
   {
     author: {

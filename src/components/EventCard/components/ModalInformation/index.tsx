@@ -13,20 +13,18 @@ const ModalInformation: FC<Props> = ({data, onClick}) => {
       setSelectedImage(idx);
       setIsImageOpen(true);
     },
-    [isImageOpen],
+    [],
   );
   const closeImage = useCallback(() => {
     setIsImageOpen(false);
     setSelectedImage(0);
-  }, [isImageOpen]);
+  }, []);
   const nextImage = useCallback(() => {
-    setSelectedImage((selectedImage + 1) % data.photos.length);
-  }, [selectedImage]);
+    setSelectedImage(prev => (prev + 1) % data.photos.length);
+  }, [data.photos.length]);
   const prevImage = useCallback(() => {
-    setSelectedImage(
-      selectedImage - 1 >= 0 ? selectedImage - 1 : data.photos.length - 1,
-    );
-  }, [selectedImage]);
+    setSelectedImage(prev => (prev - 1 >= 0 ? prev - 1 : data.photos.length - 1));
+  }, [data.photos.length]);
 
   return (
     <div
