@@ -6,7 +6,7 @@ import {Divider} from '@/shared/components/Divider';
 import {MainRootPage2Usecase} from './MainRootPage2.usecase';
 export const MainRootPage2: FC = () => {
   return (
-    <PageLayout className='mx-auto bg-white'>
+    <PageLayout className='mx-auto bg-white shadow-inner shadow-black'>
       <div className='flex w-full gap-4 h-full flex-row-reverse'>
         <div className='w-full max-w-2/3 flex flex-col p-2 h-full justify-between items-center'>
           <div className='flex flex-col h-full  gap-4 w-full items-center'>

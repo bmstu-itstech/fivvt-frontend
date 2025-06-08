@@ -1,5 +1,6 @@
 import type { HTMLAttributes } from 'react';
 
-export default interface Props extends HTMLAttributes<HTMLDivElement>{
-    title ?: string;
+export default interface Props extends HTMLAttributes<HTMLDivElement> {
+  title?: string;
+  titleClassName?: string;
 }

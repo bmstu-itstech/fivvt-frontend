@@ -4,7 +4,8 @@ import {MainRootPage} from '@/components/pages/mainRootPage';
 import {MainScrollPage} from '@/components/pages/mainScrollPage';
 import {MainScrollPage2} from '@/components/pages/mainScrollPage2';
 import {MainRootPage2} from '@/components/pages/mainRootPage2';
-import PointsPage from '@/components/pages/pointsPage/page';
+import PointsPage from '@/components/pages/pointsPage';
+import AboutFundPage from '@/components/pages/aboutFundPage';
 export default function Home() {
   return (
     <div className='w-full'>
@@ -14,6 +15,7 @@ export default function Home() {
       <MainRootPage2 />
       <MainScrollPage2 />
       <PointsPage />
+      <AboutFundPage />
     </div>
   );
 }

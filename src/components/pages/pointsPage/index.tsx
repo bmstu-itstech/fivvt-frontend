@@ -5,7 +5,7 @@ import {PointCard} from './сomponents/HistoryCard';
 import {PageLayout} from '@/layouts/PageLayout';
 const PointsPage: FC = () => {
   return (
-    <PageLayout className='bg-white h-dvh'>
+    <PageLayout className='bg-white h-dvh shadow-inner shadow-black mx-auto'>
       <div className='flex flex-col justify-between h-full w-full'>
         <p className='text-start w-full text-xl'>На текущий момент в состав Фонда входят: </p>
         <div className='w-full flex justify-center overflow-x-hidden h-full items-center '>

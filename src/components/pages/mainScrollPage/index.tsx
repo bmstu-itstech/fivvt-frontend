@@ -28,7 +28,7 @@ export const MainScrollPage: FC = () => {
             options={OPTIONS}
             screenTime={8000}
             slides={MainScrollPageUsecase.text.map((item, index) => (
-              <p key={index} className='leading-normal text-balance text-lg'>
+              <p key={index} className='leading-normal text-balance select-none text-lg'>
                 {item}
               </p>
             ))}
