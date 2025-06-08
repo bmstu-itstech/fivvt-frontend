@@ -9,7 +9,7 @@ import {PageLayout} from '@/layouts/PageLayout';
 import {Divider} from '@/shared/components/Divider';
 export const MainRootPage: FC = () => {
   return (
-    <PageLayout>
+    <PageLayout className='mx-auto'>
       <div className='flex w-full h-full'>
         <div className='w-full max-w-2/3 flex flex-col p-2 h-full justify-between items-center'>
           <div className='flex flex-col h-full  gap-4 w-full items-center'>
