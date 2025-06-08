@@ -6,7 +6,7 @@ export const Header: FC<Props> = ({className, head, tail, ...props}) => {
   const router = useRouter();
   return (
     <header
-      className={`${className} w-full sticky  h-16 flex justify-between px-inline-main_px items-center max-w-maxContainer`}
+      className={`${className} w-full sticky h-16 flex justify-between px-inline-main_px_mobile lg:px-inline-main_px items-center max-w-maxContainer`}
       {...props}>
       <button
         className='bg-transparent border-0'

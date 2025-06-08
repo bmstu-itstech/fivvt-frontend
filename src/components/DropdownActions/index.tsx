@@ -3,18 +3,14 @@ import {type FC} from 'react';
 import type Props from './DropdownActions.props';
 export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
   return (
-    <ul
-      className={`${className} relative  w-full h-14 bg-gray_light_xl `}
-      {...props}>
+    <ul className={`${className} relative w-full h-14 bg-gray_light_xl hidden lg:block`} {...props}>
       <div className='flex  justify-between items-center w-full h-full px-inline-main_px max-w-maxContainer mx-auto'>
         {items.map((item, index) => {
           return (
             <li className='group w-fit h-full flex items-center' key={index}>
               <div className='hover:shadow px-2 flex items-center hover:scale-95 duration-200 transition-all h-full rounded-md'>
                 {item.href ? (
-                  <a
-                    href={item.href}
-                    className='h-full flex items-center cursor-pointer  '>
+                  <a href={item.href} className='h-full flex items-center cursor-pointer  '>
                     {item.icon}
                     {item.visual}
                   </a>
@@ -35,9 +31,7 @@ export const DropDownActions: FC<Props> = ({className, items, ...props}) => {
                   <div className='flex gap-4 w-full mx-auto'>
                     {item.hidden.map((col, index_col) => {
                       return (
-                        <div
-                          key={index_col}
-                          className='flex w-full flex-col gap-4'>
+                        <div key={index_col} className='flex w-full flex-col gap-4'>
                           <p className=' text-md font-semibold'>{col.title}</p>
                           {col.content.map((sub, index_row) => {
                             return (
