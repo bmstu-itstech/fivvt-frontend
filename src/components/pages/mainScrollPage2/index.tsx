@@ -23,11 +23,11 @@ export const MainScrollPage2: FC = () => {
          text-white flex flex-col gap-4 justify-center items-end
            rounded-bl-2xl py-4 ps-8 pe-inline-main_px 
            text-pretty w-fit max-w-1/2 whitespace-pre-wrap select-none'>
-          <Divider className='bg-white' data-aos='fade-down' data-aos-duration='1500' />
+          <Divider className='bg-white' data-aos='fade-down' data-aos-duration='1000' />
           <EmblaCarousel
             hasDots
             data-aos='fade-left'
-            data-aos-duration='1500'
+            data-aos-duration='1000'
             screenTime={8000}
             className='h-max'
             imageClassname='rounded-xl aspect-sque h-full w-full max-h-full'

@@ -15,17 +15,17 @@ export const PointCard: FC<Props> = ({item, ind, allCount}) => {
         <div
           className='w-8 h-8 rounded-full border-2 border-amber-400'
           data-aos={ind % 2 == 1 ? 'fade-right' : 'fade-left'}
-          data-aos-duration='1500'
-          data-aos-delay={500 * ind}
+          data-aos-duration='1000'
+          data-aos-delay={250 * ind}
         />
       </div>
       <div
         className={`w-52 items-center flex flex-col translate-y-1/4 group-first:translate-y-0  cursor-pointer relative`}>
         <p
           className='group-even:text-start group-odd:text-end text-balance w-fit text-xl'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos={ind % 2 == 1 ? 'fade-down-left' : 'fade-down-right'}
-          data-aos-delay={1500}>
+          data-aos-delay={750}>
           {item.title}
         </p>
         <div

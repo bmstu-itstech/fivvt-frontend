@@ -15,7 +15,7 @@ export const HistoryCard: FC<Props> = ({item, ind, allCount}) => {
         <div
           className='w-8 h-8 rounded-full border-2 border-amber-400'
           data-aos={ind % 2 == 1 ? 'fade-right' : 'fade-left'}
-          data-aos-duration='1500'
+          data-aos-duration='1000'
         />
       </div>
       <div

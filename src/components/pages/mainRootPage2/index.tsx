@@ -13,12 +13,12 @@ export const MainRootPage2: FC = () => {
             <p
               className='text-2xl w-full truncate text-center'
               data-aos='fade-down'
-              data-aos-duration='1500'>
+              data-aos-duration='1000'>
               {MainRootPage2Usecase.title}
             </p>
             <Divider className=' bg-black' />
           </div>
-          <div className='w-full h-fit pt-4' data-aos='zoom-in-left' data-aos-duration='1500'>
+          <div className='w-full h-fit pt-4' data-aos='zoom-in-left' data-aos-duration='1000'>
             <p className='line-clamp-10 text-ellipsis whitespace-pre-wrap'>
               {MainRootPage2Usecase.text_desc}
             </p>
@@ -27,7 +27,7 @@ export const MainRootPage2: FC = () => {
         <Image
           src={MainRootPage2Usecase.photo}
           data-aos='fade-right'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           alt='member'
           width={800}
           height={800}

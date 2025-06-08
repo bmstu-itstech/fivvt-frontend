@@ -20,7 +20,7 @@ export const MainPage: FC = () => {
       <div className='z-10 flex w-full justify-between overflow-hidden max-w-maxContainer mx-auto'>
         <div
           data-aos='fade-right'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           className='flex flex-col justify-center gap-8 items-center z-10  text-white w-full max-w-1/2 '>
           <p className='text-2xl text-center max-w-1/2'>{MainPageUsecase.title}</p>
           <Button
@@ -38,7 +38,7 @@ export const MainPage: FC = () => {
            border-white/20 rounded-bl-2xl py-4 ps-8 pe-inline-main_px 
            text-pretty w-fit max-w-1/2 whitespace-pre-wrap'
           data-aos='fade-left'
-          data-aos-duration='1500'>
+          data-aos-duration='1000'>
           <p className='pb-2'>{MainPageUsecase.text_desc}</p>
         </div>
       </div>

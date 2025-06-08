@@ -25,7 +25,7 @@ const AboutFundPage: FC = () => {
       <div className='h-full w-full items-center justify-center flex'>
         <Link
           href='/charity'
-          data-aos-duration='1500'
+          data-aos-duration='1000'
           data-aos={'fade-up'}
           className='text-white text-3xl shadow-sm shadow-white 
         border border-white p-4 rounded-2xl cursor-pointer 

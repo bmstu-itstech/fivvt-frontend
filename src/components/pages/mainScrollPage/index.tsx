@@ -22,11 +22,11 @@ export const MainScrollPage: FC = () => {
       </div>
       <div className='flex w-full justify-end items-center translate-y-1/5 h-full overflow-hidden max-w-maxContainer mx-auto'>
         <div className='bg-transparent max-w-1/2 text-white flex flex-col gap-4 items-end rounded-bl-2xl py-4 ps-8 pe-inline-main_px'>
-          <Divider className='bg-white' data-aos='fade-down' data-aos-duration='1500' />
+          <Divider className='bg-white' data-aos='fade-down' data-aos-duration='1000' />
           <EmblaCarousel
             hasDots
             data-aos='fade-left'
-            data-aos-duration='1500'
+            data-aos-duration='1000'
             options={OPTIONS}
             screenTime={8000}
             slides={MainScrollPageUsecase.text.map((item, index) => (
