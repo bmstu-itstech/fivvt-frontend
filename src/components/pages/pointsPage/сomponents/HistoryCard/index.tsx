@@ -22,7 +22,7 @@ export const PointCard: FC<Props> = ({item, ind, allCount}) => {
       <div
         className={`w-52 items-center flex flex-col translate-y-1/4 group-first:translate-y-0  cursor-pointer relative`}>
         <p
-          className='group-even:text-start group-odd:text-end text-balance w-fit text-xl'
+          className='group-even:text-start group-odd:text-end text-pretty w-fit text-xl'
           data-aos-duration='1000'
           data-aos={ind % 2 == 1 ? 'fade-down-left' : 'fade-down-right'}
           data-aos-delay={750}>

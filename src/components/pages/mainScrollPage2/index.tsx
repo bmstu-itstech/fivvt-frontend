@@ -33,7 +33,7 @@ export const MainScrollPage2: FC = () => {
             imageClassname='rounded-xl aspect-sque h-full w-full max-h-full'
             options={OPTIONS}
             slides={MainScrollPage2Usecase.text.map(item => (
-              <p className=' leading-normal text-balance text-lg'>{item}</p>
+              <p className=' leading-normal text-pretty text-lg'>{item}</p>
             ))}
           />
         </div>
