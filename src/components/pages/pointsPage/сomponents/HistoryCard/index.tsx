@@ -6,19 +6,26 @@ import Image from 'next/image';
 export const PointCard: FC<Props> = ({item, ind, allCount}) => {
   return (
     <div
-      className='flex w-full odd:animate-appear-start-block-1500 group
-               even:animate-appear-end-block-1500 gap-8  odd:flex-row-reverse
+      className='flex w-full  group gap-8  odd:flex-row-reverse
                  items-end justify-start odd:translate-x-[calc(-1*(50%-1rem))]
                   even:translate-x-[calc(50%-1rem)]'
       key={ind}>
       <div className='flex flex-col h-fit group-first:mt-auto'>
         <div className='w-1 h-26 bg-amber-400 mx-auto group-first:hidden' />
-        <div className='w-8 h-8 rounded-full border-2 border-amber-400' />
+        <div
+          className='w-8 h-8 rounded-full border-2 border-amber-400'
+          data-aos={ind % 2 == 1 ? 'fade-right' : 'fade-left'}
+          data-aos-duration='1500'
+          data-aos-delay={500 * ind}
+        />
       </div>
       <div
         className={`w-52 items-center flex flex-col translate-y-1/4 group-first:translate-y-0  cursor-pointer relative`}>
-        {/* <p>{item.year}</p> */}
-        <p className='group-even:text-start group-odd:text-end text-balance w-fit text-xl'>
+        <p
+          className='group-even:text-start group-odd:text-end text-balance w-fit text-xl'
+          data-aos-duration='1500'
+          data-aos={ind % 2 == 1 ? 'fade-down-left' : 'fade-down-right'}
+          data-aos-delay={1500}>
           {item.title}
         </p>
         <div

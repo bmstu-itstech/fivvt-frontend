@@ -7,13 +7,13 @@ import './embla.css';
 import {DotButton, useDotButton} from './EmblaCarouselDotButton';
 
 const EmblaCarousel: React.FC<PropType> = props => {
-  const {slides, options, className, imageClassname, hasDots = false, screenTime = 4000} = props;
+  const {slides, options, className, imageClassname, hasDots = false, screenTime = 4000, ...propps} = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay: screenTime})]);
 
   const {selectedIndex, scrollSnaps, onDotButtonClick} = useDotButton(emblaApi);
 
   return (
-    <section className={`embla  ${className}`}>
+    <section {...propps} className={`embla  ${className}`}>
       <div className='embla__viewport max-h-full h-full' ref={emblaRef}>
         <div className='embla__container h-full max-h-full'>
           {slides.map((item, index) => (
