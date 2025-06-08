@@ -19,6 +19,7 @@
 
 @theme {
   --padding-inline-main_px: 5rem;
+  --padding-inline-main_px_mobile: 2rem;
 
   --color-green_main: rgb(10, 225, 95);
   --color-gray_light: rgb(44, 60, 74);
