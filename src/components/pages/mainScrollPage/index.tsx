@@ -2,7 +2,6 @@
 import type {FC} from 'react';
 import Image from 'next/image';
 import {MainScrollPageUsecase} from './mainScrollPage.usecase';
-import {PageLayout} from '@/layouts/PageLayout';
 import {Divider} from '@/shared/components/Divider';
 import {EmblaOptionsType} from 'embla-carousel';
 import EmblaCarousel from '@/components/EmblaCarousel';

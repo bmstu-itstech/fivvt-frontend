@@ -1,9 +1,6 @@
 'use client';
 import type {FC} from 'react';
 import Image from 'next/image';
-import {Button} from '@/shared/components/Button';
-import {useRouter} from 'next/navigation';
-import war from '@/assets/war_bg_1.jpg';
 import {MainRootPageUsecase} from './MainRootPage.usecase';
 import {PageLayout} from '@/layouts/PageLayout';
 import {Divider} from '@/shared/components/Divider';
