@@ -4,6 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import PropType from './EmblaCarousel.props';
 import Image from 'next/image';
 import './embla.css';
+import './base.css';
 import {DotButton, useDotButton} from './EmblaCarouselDotButton';
 
 const EmblaCarousel: React.FC<PropType> = props => {
@@ -13,7 +14,7 @@ const EmblaCarousel: React.FC<PropType> = props => {
   const {selectedIndex, scrollSnaps, onDotButtonClick} = useDotButton(emblaApi);
 
   return (
-    <section {...propps} className={`embla  ${className}`}>
+    <section {...propps} className={`embla w-full ${className}`}>
       <div className='embla__viewport max-h-full h-full' ref={emblaRef}>
         <div className='embla__container h-full max-h-full'>
           {slides.map((item, index) => (

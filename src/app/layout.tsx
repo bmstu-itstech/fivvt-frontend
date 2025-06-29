@@ -29,10 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className='overflow-x-hidden'>
       <Providers>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} min-h-dvh w-dvw flex flex-col justify-start items-center overflow-auto antialiased`}>
+          className={`${geistSans.variable} ${geistMono.variable} min-h-dvh w-full flex flex-col justify-start items-center antialiased`}>
           <Header {...HeaderUsecase} />
           <DropDownActions {...DropDownActionsUsecase} />
           {children}

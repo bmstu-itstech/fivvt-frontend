@@ -19,8 +19,8 @@ export const MainScrollPage: FC = () => {
           quality={100}
         />
       </div>
-      <div className='flex w-full justify-end items-center translate-y-1/5 h-full overflow-hidden max-w-maxContainer mx-auto'>
-        <div className='bg-transparent max-w-1/2 text-white flex flex-col gap-4 items-end rounded-bl-2xl py-4 ps-8 pe-inline-main_px'>
+      <div className='flex w-full lg:justify-end items-center translate-y-1/5 h-full overflow-hidden max-w-maxContainer px-inline-main_px_mobile lg:px-inline-main_px mx-auto'>
+        <div className='bg-transparent w-full lg:max-w-1/2 text-white flex flex-col gap-4 lg:items-end rounded-bl-2xl py-4 lg:ps-8 lg:pe-inline-main_px'>
           <Divider className='bg-white' data-aos='fade-down' data-aos-duration='1000' />
           <EmblaCarousel
             hasDots
@@ -29,7 +29,7 @@ export const MainScrollPage: FC = () => {
             options={OPTIONS}
             screenTime={8000}
             slides={MainScrollPageUsecase.text.map((item, index) => (
-              <p key={index} className='leading-normal text-pretty select-none text-lg'>
+              <p key={index} className='leading-normal  text-pretty select-none text-lg'>
                 {item}
               </p>
             ))}
