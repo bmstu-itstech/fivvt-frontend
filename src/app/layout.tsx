@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang='en'>
       <Providers>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} min-h-dvh flex flex-col justify-start items-center antialiased`}>
+          className={`${geistSans.variable} ${geistMono.variable} min-h-dvh w-dvw flex flex-col justify-start items-center overflow-auto antialiased`}>
           <Header {...HeaderUsecase} />
           <DropDownActions {...DropDownActionsUsecase} />
           {children}

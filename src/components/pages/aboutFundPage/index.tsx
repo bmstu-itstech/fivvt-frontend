@@ -29,7 +29,7 @@ const AboutFundPage: FC = () => {
           data-aos={'fade-up'}
           className='text-white text-3xl shadow-sm shadow-white 
         border border-white p-4 rounded-2xl cursor-pointer 
-        hover:scale-105 transition-transform animate-pulse-custom'>
+        hover:scale-105 duration-200 transition-transform animate-pulse-custom'>
           Поддержать
         </Link>
       </div>
